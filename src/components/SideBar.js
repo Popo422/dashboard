@@ -17,6 +17,7 @@ const SideBar = (props) => {
   const router = useRouter();
 
   const handleNavigate = (getMenuItem) => {
+    console.log(pathname)
     router.push(getMenuItem.link);
   };
   const pathname = usePathname();
