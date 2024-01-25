@@ -12,21 +12,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
-        <div className="flex flex-col h-full w-full items-start">
-          <div className="flex w-full h-full">
-            <div className="h-full w-1/4 min-w-50">
-              <SideBar />
-            </div>
-            <div className="w-full">
-              <Header />
-              <div className=" overflow-x-hidden h-full w-full bg-primary-gray-100">
-                <main className="h-full w-full ">{children}</main>
-              </div>
-            </div>
+    <body className={`${inter.className} h-full`}>
+      <div className="flex h-full w-full items-start">
+        <div className="h-full w-1/4 min-w-50">
+          <SideBar />
+        </div>
+        <div className="w-full h-full">
+          <Header />
+          <div className="h-full overflow-x-hidden bg-primary-gray-100">
+            <main className="h-full">{children}</main>
           </div>
         </div>
-      </body>
-    </html>
+      </div>
+    </body>
+  </html>
   );
 }

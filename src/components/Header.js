@@ -8,9 +8,9 @@ function Header(props) {
   const pathname = usePathname();
 
   return (
-    <nav className=" flex w-full bg-white header-content ">
+    <nav className="flex w-full bg-white header-content ">
       <div className="w-full mx-3">
-        <div className="flex flex-row w-full my-3  px-4 justify-between items-center x-3 ">
+        <div className="flex flex-row w-full my-3 px-4 justify-between items-center lg:px-3">
           {/* search Bar */}
           <div className="w-1/3 flex justify-between">
             <div className="w-full flex bg-gray-100 h-10 border-2  rounded-xl px-2 flex-start gap-5">

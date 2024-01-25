@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname, useRouter } from "next/navigation";
+
 import {
   RiDashboard3Line,
   RiClipboardLine,
@@ -13,6 +14,7 @@ import {
 import { FiUsers, FiUser } from "react-icons/fi";
 
 import "@/app/globals.css";
+import { useEffect } from "react";
 const SideBar = (props) => {
   const router = useRouter();
 
